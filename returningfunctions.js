@@ -30,6 +30,8 @@ function charlie() {
     }
 }
 
+console.log(charlie);//this returns the outer function by name: [Function: charlie]
+
 console.log(charlie()); //this returns the inner function by name: [Function: delta]
 
 console.log(charlie()());//you'd never do this. However, with a second set of parenthesis,
