@@ -42,3 +42,29 @@ var c = {
     ]
 }
 console.log(c.myProperty);
+//format referred to as an object graph
+
+let carLot = [
+    { year: 1994, make: "Honda", model: "Civic" },
+    { year: 2017, make: "Honda", model: "Fit" },
+    { year: 2011, make: "Scion", model: "xB" },
+    { year: 1984, make: "Honda", model: "Shadow" },
+];
+//an array of objects
+
+let contacts = {
+    owners: [
+        { firstName: "Jeffrey", lastName: "Andrews", phoneNumbers: ['(704) 553-1911', '(704) 945-0173'] },
+        { firstName: "Jennifer", lastName: "Carson", phoneNumbers: ['(704) 553-1911', '(704) 945-0173'] },
+        { firstName: "Sophia", lastName: "Andrews", phoneNumbers: ['(704) 553-1911', '(704) 945-0173'] },
+    ],
+    pets: [
+        { firstName: "Marley", lastName: "Carson", phoneNumbers: ['(704) 553-1911', '(704) 945-0173'] },
+        { firstName: "Buddy", lastName: "Carson", phoneNumbers: ['(704) 553-1911'] },
+        { firstName: "Nilla", lastName: "Carson", phoneNumbers: ['(704) 553-1911'] },
+    ],
+};
+//an object of an array of objects?
+
+//notice the similarity to JSON format to object literals. Look up the differences.
+//JavaScript has a built in function to let you work with JSON, obviously.
