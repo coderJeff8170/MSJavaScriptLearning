@@ -1,9 +1,30 @@
-<!DOCTYPE html>
-<html>
-    <head>
-
-    </head>
-    <body>
-
-    </body>
+<html lang="en">
+<head>
+    <!-- what's amazing about this doc is if you type 'doc' 
+    into the editor in an html file, it'll fill out the skeleton of a typical
+    html document for you (sans the script)- doc is an emmet abbreviation -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button onclick="clickHandler(this)">Click me</button>
+    <script>
+        function clickHandler(arg) {
+            console.log(arg);
+            console.log(arg.innerText);
+            console.log(this);
+        }
+        //takeaway here is that whenever code is called from an inline onclick event handler,
+        //`this` is set the the DOM element on which that element was defined!(here, the
+        //`this` in clickHandler's paremeters)
+        //The second `this` on the last line in the code block refers to the Window object,
+        //it's not confined to that button, it's on the global scale, like the function - 
+        //we've not taken any steps to bind it to anything so it defaults to the global object.
+        //the takeaway here is that what `this` is bound to is not always obvious
+        //and takes some detective work. How a function is called, and where it is called from.
+    </script>
+</body>
 </html>
