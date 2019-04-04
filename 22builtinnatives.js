@@ -41,5 +41,10 @@ let myPrimitive2 = myNumber.valueOf();
 console.log(typeof myNumber.valueOf());//number!
 console.log(typeof myPrimitive2);//number
 
+//natives built in native functions constructor called - return objects
+//that have rich features to support primitives 
+//can spot them by the capital letter start and constructor keywords like 'new'
+//as in new Object() or new Number()
+
 
 
