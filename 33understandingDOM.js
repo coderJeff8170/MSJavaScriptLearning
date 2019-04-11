@@ -18,7 +18,8 @@
 //so anyways, make an IIFE!
 
 (function () {
-
+//message could be anything - it's a parameter of the function clickHandler, 
+//which we just invented.
     function clickHandler(message) {
     console.log(`hi .... ${message}` );
     }
